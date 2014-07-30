@@ -1,0 +1,13 @@
+{
+    "modListVersion": 2,
+    "modList": [
+        {
+            "modid": "jcvoter",
+            "version": "1.0",
+            "name": "JamCraft Voting Mod",
+            "authorList": [
+                "killjoy1221"
+            ]
+        }
+    ]
+}
