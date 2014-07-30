@@ -61,7 +61,7 @@ public class JCVoter {
 			}
 			return;
 		}
-		if(playerVoteTimes.containsKey(player) && (getCurrentTime() - playerVoteTimes.get(player))/1000 < 120){
+		if(playerVoteTimes.containsKey(player) && (getCurrentTime() - playerVoteTimes.get(player))/1000 < Settings.waitTime){
 			int sec = (int)(getCurrentTime() - playerVoteTimes.get(player))/1000;
 			this.sendErrorChat(player, "You recently started a vote. Please wait " + sec + " more second" + (sec == 0 ? "" : "s") + ".");
 			return;
