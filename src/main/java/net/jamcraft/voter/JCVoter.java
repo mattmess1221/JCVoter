@@ -50,8 +50,10 @@ public class JCVoter {
 			return;
 		event.setCanceled(true);
 		String[] vote = message.split(" ");
-		if(vote.length <= 1)
-			throw new IllegalArgumentException("Enter something to vote for.  Add yes to vote yes, and no to vote no.");
+		if(vote.length <= 1){
+			this.sendErrorChat(player, "Enter something to vote for.  Add yes to vote yes, and no to vote no.");
+			return;
+		}
 		if(currentVote != null){
 			String value = vote[1];
 			try{
