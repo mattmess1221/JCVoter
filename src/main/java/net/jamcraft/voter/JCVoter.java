@@ -21,7 +21,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 
-@Mod(version = "1.0", modid = "jcvoter", name = "JamCraft Voting Mod")
+@Mod(version = "1.0", modid = "jcvoter", name = "JamCraft Voting Mod", acceptableRemoteVersions = "*")
 public class JCVoter {
 	
 	private Nominee currentVote;
